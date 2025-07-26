@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static 'pagina3.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+
+<h2>Galeria de Fotos de Gramado</h2>
+<p>Confira algumas das paisagens, monumentos e pontos turísticos mais incríveis de Gramado.</p>
+
+<div class="gallery-grid">
+    <img src="{% static 'img/lago-negro.png' %}" alt="Lago Negro">
+    <img src="{% static 'img/mini-mundo.png' %}" alt="Mini Mundo">
+    <img src="{% static 'img/rua-coberta.png' %}" alt="Rua Coberta">
+    <img src="{% static 'img/natal-luz.png' %}" alt="Natal Luz">
+    <img src="{% static 'img/catedral-pedro.png' %}" alt="Catedral São Pedro">
+</div>
+{% endblock %}

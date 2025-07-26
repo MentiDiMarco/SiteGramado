@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static 'pagina2.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+
+<h2>História e Cultura de Gramado</h2>
+
+<p>Gramado foi fundada em 1875 por colonos italianos e alemães, e até hoje mantém viva a influência europeia em sua arquitetura, gastronomia e festas tradicionais.</p>
+
+<p>A cultura local é marcada por eventos como o <strong>Festival de Cinema de Gramado</strong>, o famoso <strong>Natal Luz</strong> e a tradicional culinária, com chocolates artesanais e fondue.</p>
+
+<img src="{% static 'img/historia-gramado.png' %}" alt="Centro Histórico de Gramado">
+
+<h3>Curiosidades</h3>
+<ul>
+    <li>Gramado é conhecida como a “Suíça Brasileira” devido ao seu clima frio e arquitetura alpina.</li>
+    <li>O Festival de Cinema de Gramado é um dos mais importantes do país.</li>
+    <li>A cidade possui mais de 40 chocolaterias artesanais.</li>
+</ul>
+
+<p>Essas características tornam Gramado um destino único, que mistura tradição e modernidade de forma charmosa e acolhedora.</p>
+{% endblock %}

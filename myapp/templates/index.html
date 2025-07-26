@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gramado - RS</title>
+    <link rel="stylesheet" href=" {% static 'style.css' %} ">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo a Gramado</h1>
+        <nav>
+            <a href="{% url 'home' %}">Início</a>
+            <a href="{% url 'pagina1' %}">Atrações</a>
+            <a href="{% url 'pagina2' %}">História e Cultura</a>
+            <a href="{% url 'pagina3' %}">Galeria</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        <div class="index-container">
+            <h2 class="titulo-centralizado">Conheça Gramado</h2>
+            <p>
+                Localizada na encantadora Serra Gaúcha, Gramado é uma cidade que combina natureza, cultura e arquitetura inspirada na Europa. 
+                Com clima ameno, ruas floridas e atrações turísticas únicas, é o destino perfeito para famílias, casais e amantes da boa gastronomia.
+            </p>
+        </div>
+        {% endblock %}
+    </main>
+    <footer>
+        <p>Desenvolvido por Marco Menti</p>
+    </footer>
+</body>
+</html>

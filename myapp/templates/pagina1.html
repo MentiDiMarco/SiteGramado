@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+{% block content %}
+{% load static %}
+<h2>Principais Atrações de Gramado</h2>
+
+<p>Gramado é um dos destinos mais encantadores do Brasil, conhecido por suas paisagens europeias, clima acolhedor e atrações turísticas únicas. Veja algumas das principais:</p>
+
+<div class="card-container">
+    <div class="card">
+        <img src="{% static 'img/lago-negro.png' %}" alt="Lago Negro">
+        <div class="card-content">
+            <h3>Lago Negro</h3>
+            <p>Rodeado por árvores importadas da Floresta Negra, na Alemanha, o Lago Negro é perfeito para caminhadas, piqueniques e passeios de pedalinho.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="{% static 'img/mini-mundo.png' %}" alt="Mini Mundo">
+        <div class="card-content">
+            <h3>Mini Mundo</h3>
+            <p>Um parque ao ar livre com réplicas perfeitas em miniatura de construções famosas do mundo. Uma atração encantadora para todas as idades.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="{% static 'img/rua-coberta.png' %}" alt="Rua Coberta">
+        <div class="card-content">
+            <h3>Rua Coberta</h3>
+            <p>Um dos locais mais movimentados da cidade, com restaurantes, lojas, eventos e uma cobertura charmosa que protege da chuva e do frio.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
